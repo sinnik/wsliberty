@@ -1,0 +1,316 @@
+input[type=text], [type=search] select {
+	width: 70%;
+	display: block;
+	padding: 1%;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-sizing: border-box;
+}
+
+input[type=email], [type=password] {
+	width: 70%;
+	display: block;
+	padding: 1%;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-sizing: border-box;
+}
+
+input[type=submit] {
+	background-color: orange;
+	color: white;
+	padding: 1%;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.form input:required:invalid, input:focus:invalid {
+	background-image: url(/soloproject/images/invalidsmall.png);
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+.form input:required:valid {
+	background-image: url(/soloproject/images/validsmall.png);
+	background-position: right;
+	background-repeat: no-repeat;
+}
+
+img {
+	width:200px;
+}
+
+.zoom{width:200px;transition-delay:1s;transition:all 2s;}
+
+.zoom:hover {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 500px;
+	height: auto;
+	display: block;
+	z-index: 999;
+}
+
+@media only screen and (max-width:750px) {
+	body {
+		font-size: 0.75em;
+		width: 700px;
+		overflow:auto;
+	}
+	img.resize {
+		height: 100px;
+	}
+}
+
+p {
+	padding: 2%;
+}
+
+form {
+	font-size: 1em;
+}
+
+table {
+	table-layout: auto;
+	border-collapse: collapse;
+	width: 100%;
+	overflow: auto;
+}
+
+th, td {
+	padding: 1%;
+	text-align: left;
+}
+
+html, body {padding:0 1% 0 0;overflow-x:auto;overflow-y:auto;}
+
+header {
+	text-align: center;
+}
+
+footer {
+	bottom: 0;
+	width: 100%;
+	padding: 2% 1% 1% 1%;
+	margin: 2% 0 1% 1%;
+	text-align: center;
+}
+
+footer a {
+	text-decoration: none;
+}
+
+ul {
+	text-align: center;
+	width: 100%;
+	padding: 0;
+	margin: 1%;
+	min-width: 500px;
+	list-style-type: none;
+	overflow: hidden;
+	background-color: #333;
+}
+
+li {
+	float: left;
+}
+
+li a, .dropbtn {
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: orange;
+}
+
+li.dropdown {
+	display: inline-block;
+}
+
+.left {
+	text-align: left;
+}
+
+.right {
+	text-align: right;
+}
+
+.center {
+	text-align: center;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.floatright {
+	float: right;
+}
+
+.notdisplay {
+	display: none;
+}
+
+.small {
+	font-size: x-small;
+}
+
+.large {
+	font-size: large;
+}
+
+.inlineblock {
+	display: inline-block;
+}
+
+.searchbar {
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	border-radius: 3px;
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: orange;
+	color: white;
+}
+
+.dropdown-content a:hover {
+	background-color: white;
+	color: orange;
+	font-weight: bold;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.highlight a:link, .highlight .a:visited, .highlight a:active {
+	text-decoration: none;
+	color: black;
+}
+
+.highlight a:hover, .highlight1 {
+	color: orange;
+	font-weight: bold;
+}
+
+.filter {
+	font-size: 0.875em;
+	background-color: white;
+	list-style-type: none;
+	overflow: auto;
+	background-color: white;
+}
+
+.column {
+	max-height: 1000px;
+	overflow: auto;
+	-webkit-column-count: 2;
+	-webkit-column-gap: 20px;
+	-webkit-column-rule: 2px outset lightgrey;
+}
+
+.borderup {
+	border: 1px solid #ccc;
+	border-radius: 3px;
+}
+
+.listproduct {
+	padding:1%;
+	text-align: center;
+	display: inline-block;
+/* 	overflow: auto; */
+}
+
+#quantity {
+	width: 70px;
+	text-align: right;
+	float: right;
+	display: inline-block;
+}
+
+#basketsubtotal {
+	color: orange;
+	font-weight: bold;
+	font-size: 1.25em;
+}
+
+#account {
+	float: right;
+	min-width: 100px;
+	color: orange;
+}
+
+#container {
+	min-height: 1000px;
+	height: auto;
+	overflow:auto;
+/* 	background-color: #80ffff; */
+}
+
+#sidebar {
+	float: left;
+	margin: 1%;
+	padding: 1%;
+	width: 15%;
+	min-height: 100%;
+	height: auto;
+/* 	background-color: #f0f0f0; */
+}
+
+#content {
+/* 	position: relative; */
+	float: right;
+	margin: 1%;
+	padding: 1%;
+	width: 75%;
+	min-height: 100%;
+	height: auto;
+/* 	background-color: lightgreen; */
+}
+
+#content1 {
+	height: auto;
+	margin: 1%;
+	padding: 1%;
+	/* 	background-color:lightblue; */
+}
+
+#content2 {
+	height: auto;
+	margin: 1%;
+	padding: 1%;
+	/* 	background-color:lightyellow; */
+}
+
+#content3 {
+	width: auto;
+	min-height: 200px;
+	height:auto;
+	margin: 1%;
+	padding: 1%;
+	overflow: auto;
+	/* 	background-color:#f0f0f0; */
+}

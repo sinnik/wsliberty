@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1"
+	xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+             http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="default" transaction-type="RESOURCE_LOCAL">
+		<class>com.fdmgroup.fdmazon.model.Order</class>
+		<class>com.fdmgroup.fdmazon.model.OrderProduct</class>
+		<class>com.fdmgroup.fdmazon.model.Product</class>
+		<class>com.fdmgroup.fdmazon.model.User</class>
+		<class>com.fdmgroup.fdmazon.model.OrderProductId</class>
+		<exclude-unlisted-classes>false</exclude-unlisted-classes>
+		<properties>
+			<property name="hibernate.connection.driver_class" value = "oracle.jdbc.driver.OracleDriver"/>
+			<property name="hibernate.connection.password" value = "qwerty123"/>
+			<property name="hibernate.connection.url" value = "jdbc:oracle:thin:@oracle.fdmgroup.com:1521:xe"/>
+			<property name="hibernate.connection.username" value = "boonhonhong"/>
+			<property name="hibernate.dialect" value = "org.hibernate.dialect.Oracle10gDialect"/>
+			<property name="hibernate.show_sql" value = "true"/>
+			<property name="hibernate.format_sql" value = "true"/>
+			<property name="hibernate.hbm2ddl.auto" value = "update"/>
+		</properties>
+	</persistence-unit>
+</persistence>

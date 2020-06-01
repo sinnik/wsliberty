@@ -1,0 +1,1 @@
+<% request.getRequestDispatcher("/latestProductC").include(request, response); %>
